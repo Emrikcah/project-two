@@ -10,10 +10,11 @@
 }
 
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-header{
+header {
     padding-top: 4rem;
 }
 
@@ -22,6 +23,10 @@ h2,
 h3,
 .nav-items {
     text-transform: uppercase;
+}
+
+.name {
+    text-transform: capitalize;
 }
 
 ul,
@@ -34,7 +39,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     margin: 2rem 0;
 }
 
@@ -129,36 +134,46 @@ section {
         padding: 0 2rem;
     }
 
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-      
     }
 
-    .profile-item{
-        align-items: center;
+    .profile-img {
+        margin-top: 0;
+        width: 300px;
+        order: 2;
+    }
+
+    .profile-text {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .profile-item {
+        align-self: start;
     }
 }
 
 
 @media (min-width: 1024px) {
-    .flex{
+    .flex {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .nav-items{
+    .nav-items {
         margin-top: 0;
         display: flex;
         align-items: center;
     }
 
-    .nav-item{
+    .nav-item {
         margin-top: 0;
     }
 
-    
+
 }
+
 /* Media Queries end */
