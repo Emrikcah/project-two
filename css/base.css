@@ -1,5 +1,6 @@
 :root {
     --lite-gray: #fafafa;
+    --hover-color: #36acd0;
 }
 
 /* base styles */
@@ -97,7 +98,7 @@ section {
 }
 
 .nav-link:hover {
-    color: red;
+    color: var(--hover-color);
 }
 /* header end */
 
@@ -159,7 +160,7 @@ section {
     }
 
     .profile-text {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem 1rem 0;
         text-align: left;
     }
 
@@ -219,6 +220,7 @@ section {
     .lg-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
 
