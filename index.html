@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900&display=swap" rel="stylesheet">
     <!-- my styles -->
     <link rel="stylesheet" href="css/base.css">
     <title>Project-Two</title>
@@ -27,7 +27,7 @@
         </nav>
     </header>
     <section id="profile">
-        <div class="container grid">
+        <div class="container grid profile-flex">
             <img src="images/profile-pic.png" class="profile-item profile-img" alt="profile picture">
             <p class="profile-item profile-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam sint veritatis quisquam saepe. Ducimus, corporis, suscipit molestiae qui ipsum nemo repellendus nesciunt, officia similique debitis obcaecati libero cumque officiis </p>
         </div>
@@ -35,7 +35,7 @@
     <section id="portfolio">
         <div class="container">
             <h2 class="port-title">portfolio</h2>
-            <div>
+            <div class="grid lg-grid">
                 <div>
                     <img src="images/portfolio-1.png" alt="portfolio image one">
                     <h3 class="port-name">marketing page</h3>
@@ -102,7 +102,13 @@
 
                 <h5>student name</h5>
 
-                <h5>student name</h5>
+                <h5 class="d-md-none p">back to top</h5>
+
+                <ul class="d-none d-md-block nav-items">
+                    <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                </ul>
             </div>
         </div>
 
