@@ -2,10 +2,7 @@
     --lite-gray: #fafafa;
     --hover-color: #36acd0;
     --ebony: #000;
-}
-
-html{
-    scroll-behavior: smooth;
+    --white: #fff;
 }
 
 /* base styles */
@@ -17,7 +14,7 @@ html{
 
 html {
     font-family: 'Poppins', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 header {
@@ -60,17 +57,11 @@ section {
     padding: 3rem 0;
 }
 
-.pt {
-    padding-top: 1rem;
-}
-
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
-
-
 
 #profile,
 #header,
@@ -115,7 +106,29 @@ section {
 .nav-link:hover {
     color: var(--hover-color);
 }
+
 /* header end */
+
+/* protfolio */
+
+
+.lg-grid{
+    padding: 3rem;
+}
+
+.lg-grid div{
+    padding-bottom: 2rem;
+}
+
+.portfolio-title{
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.port-name{
+    font-weight: 400;
+}
+/* protfolio end */
 
 /* footer */
 #footer {
@@ -158,9 +171,10 @@ section {
     padding: 1rem 0 1rem 0;
 }
 
-.p a:hover{
+.p a:hover {
     color: var(--hover-color);
 }
+
 /* footer end */
 
 /* Media Queries */
@@ -228,6 +242,17 @@ section {
 }
 
 @media (min-width: 1024px) {
+
+    body{
+        background: var(--lite-gray);
+    }
+
+    #portfolio{
+        background: var(--white);
+        width: 97%;
+        margin: 0 auto;
+    }
+
     .flex {
         flex-direction: row;
         justify-content: space-between;
