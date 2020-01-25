@@ -157,6 +157,10 @@ section {
 .p {
     padding: 1rem 0 1rem 0;
 }
+
+.p a:hover{
+    color: var(--hover-color);
+}
 /* footer end */
 
 /* Media Queries */
